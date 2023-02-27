@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./Button";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dynamic Buttons</h1>
+      <Button name={"Blue"} className={"blue"} />
+      <Button name={"Green"} className={"green"} />
+      <Button name={"Orange"} className={"orange"} />
+      <Button name={"Red"} className={"red"} />
+      <Button name={"Outlined"} className={"outlined-blue"} />
     </div>
   );
 }
-
-export default App;
